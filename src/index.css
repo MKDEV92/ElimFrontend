@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+
+/* Add at the bottom of index.css */
+/* Secondary Navbar Styling */
+.sec-navbar-container {
+  background-color: #600ebd54; /* Light red */
+}
+
+.sec-navbar-item {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  color: #c50a0a; /* Dark black */
+  transition: color 0.3s;
+}
+
+.sec-navbar-item:hover {
+  color: #4f46e5; /* Indigo-600 hover */
+}
+
+/* Animation */
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-nav {
+  animation: scroll-horizontal 25s linear infinite;
+}
+
+.scrolling-nav:hover {
+  animation-play-state: paused;
+}
